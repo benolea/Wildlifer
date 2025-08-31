@@ -1,0 +1,14 @@
+# Environment configuration
+EnvConfig*
+
+# Xcode
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# Swift Package Manager  
+.swiftpm/
+.build/
+
+# macOS
+.DS_Store

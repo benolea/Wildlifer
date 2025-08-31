@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0A203C182E64AB0900497965 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 0A203C172E64AB0900497965 /* GoogleMaps */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0A7E433E2E5E630900CF93DB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A203C182E64AB0900497965 /* GoogleMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = Wildlifer;
 			packageProductDependencies = (
+				0A203C172E64AB0900497965 /* GoogleMaps */,
 			);
 			productName = Wildlifer;
 			productReference = 0A7E432B2E5E630700CF93DB /* Wildlifer.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 0A7E43222E5E630700CF93DB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0A203C162E64AB0900497965 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0A7E432C2E5E630700CF93DB /* Products */;
 			projectDirPath = "";
@@ -550,6 +559,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A203C162E64AB0900497965 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 10.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A203C172E64AB0900497965 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A203C162E64AB0900497965 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A7E43232E5E630700CF93DB /* Project object */;
 }

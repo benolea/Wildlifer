@@ -2,19 +2,22 @@
 //  WildliferApp.swift
 //  WildliferApp
 //
-//  Created by Benjamin Olea on 8/14/25.
+//  Created by Benjamin Olea on 8/14/25
 //
 
 import SwiftUI
+import GoogleMaps
 
 @main
-struct FinAiApp: App {
+struct WildliferApp: App {
     let persistenceController = PersistenceController.shared
+    
+    init() {
+        GMSServices.provideAPIKey(googleK)
+    }
 
     var body: some Scene {
         WindowGroup {
-//            ContentView()
-//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
             HomeView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
