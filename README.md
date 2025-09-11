@@ -9,7 +9,9 @@ features and more data all over the US.
 
 Here is the App Screenshot:
 
-![App Screenshot](Assets/homescreen.png)
+<p align="left">
+  <img src="Assets/homescreen.png" alt="App Homepage" width="150"/>
+</p>
 
 ## Functionality
 - Async code for fetching data from the nps public api
